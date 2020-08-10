@@ -2,10 +2,25 @@
 {% load static %}
 {% block title %}Inicio{% endblock %}
 {% block content %}
+
+      <div id="carouselExampleSlidesOnly" class="carousel slide" data-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+              <img src="{% static 'core/img/img1.png' %}" class="d-block w-100" alt="img1">
+          </div>
+          <div class="carousel-item">
+            <img src="{% static 'core/img/img2.png' %}" class="d-block w-100" alt="img2">
+          </div>
+          <div class="carousel-item">
+            <img src="{% static 'core/img/img3.png' %}" class="d-block w-100" alt="img3">
+          </div>
+        </div>
+      </div>
+
 <div class="container">
   <div style="padding-top:50px; text-align:center;">
     <h1>{{title}}</h1>
-    <p class="lead">CBV, autenticación, registros, perfiles y más</p>
+    
   </div>
 </div>
 {% endblock %}
