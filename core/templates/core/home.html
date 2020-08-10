@@ -17,10 +17,33 @@
         </div>
       </div>
 
-<div class="container">
+<div class="container" >
   <div style="padding-top:50px; text-align:center;">
     <h1>{{title}}</h1>
-    
   </div>
+  <br>
+
+
+<div class="row" style="margin-left:150px" >
+    <div class="col-sm-6 mb-5" >
+      <div class="card" style="width: 20rem;">
+        <img src="{% static 'core/img/img4.png' %}" class="card-img-top" alt="Responsive card">
+        <div class="card-body">
+          <h5 class="card-title" style="margin-left:80px">Buscar empleo</h5>
+          <a href="{% url 'pages:pages' %}" class="btn btn-info btn-block ">Clic aquí</a>
+        </div>
+      </div>
+    </div>
+    <div class="col-sm-6">
+      <div class="card" style="width: 20em;">
+        <img src="{% static 'core/img/img5.png' %}" class="card-img-top" alt="Responsive card">
+        <div class="card-body">
+          <h5 class= "card-title" style="margin-left:50px">Administar empleos</h5>
+          <a href="{% url 'login' %}" class="btn btn-info btn-block" >Clic aquí</a>
+        </div>
+      </div>
+    </div>
+ </div>
+
 </div>
 {% endblock %}
