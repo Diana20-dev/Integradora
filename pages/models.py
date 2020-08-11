@@ -15,3 +15,6 @@ class Page(models.Model):
 
     def __str__(self):
         return self.title
+
+class Curriculum(models.Model):
+    curriculum = models.FileField(upload_to="curriculums", null=True)

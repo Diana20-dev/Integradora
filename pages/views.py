@@ -1,3 +1,4 @@
+from django.shortcuts import render
 from django.views.generic.list import ListView
 from django.views.generic.detail import DetailView
 from django.views.generic.edit import CreateView, UpdateView, DeleteView 
@@ -21,7 +22,7 @@ class PageListView(ListView):
 
 class PageDetailView(DetailView):
     model = Page
-
+   
 @method_decorator(staff_member_required, name='dispatch')
 class PageCreate(CreateView):
     model = Page
